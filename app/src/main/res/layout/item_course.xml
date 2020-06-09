@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemCourseCard"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginEnd="2dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="36">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/course_background"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/itemCourseIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="28dp"
+                    android:src="@drawable/chemistry"/>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="64">
+
+
+                <TextView
+                    android:id="@+id/itemCourseTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Discrete mathematics"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/itemCourseTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/itemCourseTitle"
+                    app:srcCompat="@drawable/ic_follower" />
+
+                <TextView
+                    android:id="@+id/itemCourseFollowerCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="169,457"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="12dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:srcCompat="@drawable/ic_cash" />
+
+                <TextView
+                    android:id="@+id/itemCourseLessonCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="45 lessons"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemCourseDetailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="21dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="36dp"
+        app:cardBackgroundColor="@color/colorLightGreen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/look"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textColor="@color/colorWhite"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

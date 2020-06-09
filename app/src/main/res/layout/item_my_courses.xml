@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="185dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemCourseCard"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/myCourseCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/itemMyCourseTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Discrete mathematics"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/itemMyCourseProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:progress="0"
+                android:progressTint="@color/colorLightGreen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemMyCourseTitle" />
+
+            <TextView
+                android:id="@+id/itemMyCourseProgressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_regular"
+                app:layout_constraintEnd_toEndOf="@+id/itemMyCourseProgress"
+                app:layout_constraintTop_toBottomOf="@+id/itemMyCourseProgress" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemCourseDetailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="21dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="85dp"
+        app:cardBackgroundColor="@color/colorLightGreen">
+
+        <TextView
+            android:id="@+id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_learning"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textColor="@color/colorWhite"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

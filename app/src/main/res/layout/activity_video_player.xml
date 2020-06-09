@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".presentation.video_player.VideoPlayerActivity">
+
+    <ImageButton
+        android:id="@+id/video_player_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_remove_sign"
+        android:tint="@color/colorWhite"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"/>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:show_timeout="10000"
+        app:resize_mode="fill"
+        app:repeat_toggle_modes="one"
+        app:fastforward_increment="30000"
+        app:rewind_increment="30000"
+        app:use_controller="true"
+        app:controller_layout_id="@layout/exo_playback_control_view"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/colorWhite" />
+
+
+</RelativeLayout>

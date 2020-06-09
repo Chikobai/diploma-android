@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".presentation.course_test.CourseTestFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSquareAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/txtCurrentQuizPosAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                style="@style/DefTextStyle"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtYourAnswerAll"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="14sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:text="Question"/>-->
+
+
+            <TextView
+                android:id="@+id/txtQuizTextAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textAllCaps="false"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAnswersAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

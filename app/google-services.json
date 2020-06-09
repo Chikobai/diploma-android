@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1040420471820",
+    "firebase_url": "https://studyinn-59c67.firebaseio.com",
+    "project_id": "studyinn-59c67",
+    "storage_bucket": "studyinn-59c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040420471820:android:6fdf1c1d32e0230fb11a29",
+        "android_client_info": {
+          "package_name": "kz.jibergroup.studyinn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040420471820-55ssjiflmilflcbhjhsk2157rdjo0vtl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.jibergroup.studyinn",
+            "certificate_hash": "544605389c739ab82b89712fa3e08744db23449e"
+          }
+        },
+        {
+          "client_id": "1040420471820-md4tomaftga5021vt90kf0jl0832apr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB8WioTocgkcXM4cVhQa_T5YZxXwVdAQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040420471820-md4tomaftga5021vt90kf0jl0832apr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

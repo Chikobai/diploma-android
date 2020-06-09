@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout
+    android:id="@+id/itemMyCourseShimmer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/itemShimmerCourseCard"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            app:cardCornerRadius="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/itemShimmerMyCourseTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/shimmer_border_6"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/itemShimmerMyCourseProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:progress="0"
+                    android:background="@drawable/shimmer_border_6"
+                    android:progressTint="@color/colorLightGreen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itemShimmerMyCourseTitle" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/shimmer_border_6"
+                    android:fontFamily="@font/roboto_regular"
+                    app:layout_constraintEnd_toEndOf="@+id/itemShimmerMyCourseProgress"
+                    app:layout_constraintTop_toBottomOf="@+id/itemShimmerMyCourseProgress" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/itemShimmerCourseDetailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="21dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="85dp"
+            app:cardBackgroundColor="@color/colorLightGreen">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shimmer_border_6"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/colorWhite"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    
+    
+</com.facebook.shimmer.ShimmerFrameLayout>

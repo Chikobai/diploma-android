@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_height">128dp</dimen>
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="very_small_margin">4dp</dimen>
+    <dimen name="fingerprint_square_dimen">40dp</dimen>
+    <dimen name="fingerprint_square_dimen_viewport" type="float">40.0</dimen>
+    <dimen name="normal_text">16sp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="default_message_text_size">14sp</dimen>
+    <dimen name="default_subtitle_text_size">15sp</dimen>
+    <dimen name="default_timestamp_text_size">10sp</dimen>
+    <dimen name="text_size_title_big">34sp</dimen>
+    <dimen name="sub_title_small_text_size">13sp</dimen>
+
+    <dimen name="frame_height">112dp</dimen>
+    <dimen name="image_button_padding">20dp</dimen>
+
+    <dimen name="button_padding">14dp</dimen>
+    <dimen name="edit_text_padding">17dp</dimen>
+    <dimen name="top_padding">24dp</dimen>
+    <dimen name="big_top_padding">32dp</dimen>
+    <dimen name="two_quarters_margin">8dp</dimen>
+    <dimen name="quarter_margin">4dp</dimen>
+    <dimen name="three_quarters_margin">12dp</dimen>
+    <dimen name="two_quarters_corner_radius">8dp</dimen>
+
+    <dimen name="button_padding_bottom">32dp</dimen>
+    <dimen name="button_text_size">17sp</dimen>
+    <dimen name="button_title">20sp</dimen>
+
+    <dimen name="default_dot_diameter">13dp</dimen>
+    <dimen name="default_dot_spacing">13dp</dimen>
+
+    <dimen name="pin_btn_margin">14dp</dimen>
+    <dimen name="pin_btn_width">74dp</dimen>
+    <dimen name="pin_btn_size">36sp</dimen>
+    <dimen name="pin_btn_corner_radius">37dp</dimen>
+
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+
+    <dimen name="padding_medium">12dp</dimen>
+
+    <declare-styleable name="IndicatorDotsView">
+        <attr name="pinLength" format="integer" />
+        <attr name="dotEmptyBackground" format="reference" />
+        <attr name="dotFilledBackground" format="reference" />
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

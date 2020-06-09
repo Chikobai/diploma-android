@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.course_detail.CourseDetailActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/courseDetailImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/men"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/courseDetailTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/courseDetailImage"
+        app:layout_constraintTop_toTopOf="@+id/courseDetailImage" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/courseDetailTitle"
+        app:layout_constraintTop_toBottomOf="@+id/courseDetailTitle"
+        app:srcCompat="@drawable/ic_follower" />
+
+    <TextView
+        android:id="@+id/courseDetailFollowerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="0"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/shape_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/courseDetailFollowerCount"
+        app:layout_constraintStart_toEndOf="@+id/courseDetailFollowerCount"
+        app:layout_constraintTop_toTopOf="@+id/courseDetailFollowerCount">
+
+        <TextView
+            android:id="@+id/courseRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:maxLength="3"
+            android:textColor="@color/colorBlack"
+            android:textScaleX="1"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:id="@+id/courseRatingStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="@color/colorYellow"
+        android:rating="0"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/courseDetailJoinBtnCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/colorLightGreen"
+        app:cardCornerRadius="24dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseDetailImage">
+
+        <TextView
+            android:id="@+id/courseDetailJoinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingStart="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/join_course"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/courseDetailAlreadyJoinedCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/colorBlue"
+        app:cardCornerRadius="24dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseDetailImage">
+
+        <TextView
+            android:id="@+id/courseDetailAlreadyJoinedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingStart="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/continue_learning"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/courseDetailTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseDetailJoinBtnCard">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/courseDetailViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseDetailTab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

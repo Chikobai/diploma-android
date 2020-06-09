@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageEmptyItem"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageEmptyItem"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/no_info"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="44dp"
+            android:layout_below="@+id/textNotification"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="@string/go_back"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.course_content.CourseContentFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".presentation.course_content.CourseContentFragment">
+
+        <TextView
+            android:id="@+id/lessonTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Introduction"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lessonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Discrete mathematics is the study of mathematical structures that are countable or otherwise distinct and separable. Examples of structures that are discrete are combinations, graphs, and logical statements. Discrete structures can be finite or infinite. Discrete mathematics is in contrast to continuous mathematics, which deals with structures which can range in value over the real numbers, or have some non-separable quality.\n\n Since the time of Isaac Newton and until quite recently, almost the entire emphasis of applied mathematics has been on continuously varying processes, modeled by the mathematical continuum and using methods derived from the diﬀerential and integral calculus. In contrast, discrete mathematics concerns itself mainly with finite collections of discrete objects. With the growth of digital devices, especially computers, discrete mathematics has become more and more important."
+            android:textAlignment="inherit"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonTitle" />
+
+    </LinearLayout>
+
+</ScrollView>

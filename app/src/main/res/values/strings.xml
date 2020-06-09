@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">StudyInn</string>
+    <string name="login">Войти</string>
+    <string name="login_text">Чтобы продолжить, введите ваш логин и пароль</string>
+    <string name="reset_password_text">Чтобы продолжить, введите эл-почту</string>
+    <string name="register_text">Чтобы продолжить, введите ваши данные</string>
+    <string name="registration">Регистрация</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="restore_password">Восстановить пароль</string>
+    <string name="phone_hint">Введите ваш номер</string>
+    <string name="email_hint">Введите вашу эл-почту</string>
+    <string name="fio_hint">Введите ФИО</string>
+    <string name="lastname_hint">Введите ваше фамилию</string>
+    <string name="name_hint">Введите ваше имя</string>
+    <string name="password">Введите пароль</string>
+    <string name="home">Главная</string>
+    <string name="catalog">Каталог</string>
+    <string name="my_course">Мои курсы</string>
+    <string name="profile">Профиль</string>
+    <string name="search_course">Найти</string>
+    <string name="my_courses">Мой курсы</string>
+    <string name="main">Главная</string>
+    <string name="attention">Внимание</string>
+    <string name="share">Поделиться</string>
+    <string name="settings">Настройки</string>
+    <string name="error_network_request">Ошибка отработки запроса</string>
+    <string name="try_again">Попробуйте еще раз</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="nothing_was_found">Ничего не найдено</string>
+    <string name="post_not_found">Активных постов не найдено</string>
+    <string name="course_in_this_catagory_not_found">Курсы в этой категории не найдены</string>
+    <string name="user_courses_not_found">Активных курсов не найдено</string>
+    <string name="attention_alert">Внимание</string>
+    <string name="you_have_joined_course">Вы уже присоединились к этому курсу</string>
+    <string name="continue_learning">Продолжить курс</string>
+    <string name="sure_to_logout">Вы точно хотите выйти?</string>
+    <string name="error">Ошибка</string>
+    <string name="course_module_not_found">Модули курса не найдены</string>
+    <string name="your_result">Ваш результат</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="your_changes_saved">Ваши изменения сохранены</string>
+    <string name="choose">Выбрать</string>
+    <string name="about_app">О приложений</string>
+    <string name="change_data">Изменить данные</string>
+    <string name="app_version">Версия 1.0.0</string>
+    <string name="join_course">Присоединиться к курсу</string>
+    <string name="restore">Восстановить</string>
+    <string name="fill_new_email">Введите новую эл-почту</string>
+    <string name="save">Сохранить</string>
+    <string name="fill_new_password">Введите новый пароль</string>
+    <string name="confirm_new_password">Повторите новый пароль</string>
+    <string name="skill_you_gain">Навыки, которые вы приобретете:</string>
+    <string name="other_language">Другие языки:</string>
+    <string name="to_review_learn_80_percent">Чтобы оставить отзыв, пройдите больше 80% материалов</string>
+    <string name="look">Смотреть</string>
+    <string name="no_info">Нет информации</string>
+    <string name="go_back">Вернуться назад</string>
+    <string name="point">балл</string>
+    <string name="min">мин</string>
+    <string name="pupil">ученик</string>
+    <string name="like">нравиться</string>
+    <string name="experience">Стаж:</string>
+    <string name="statistics">Статистика</string>
+    <string name="time">Время</string>
+    <string name="effectiveness">Эффективность</string>
+    <string name="notification">Уведомления</string>
+    <string name="reminder_about_lesson">Напоминать о занятиях</string>
+    <string name="reminder_time">Время уведомления:</string>
+    <string name="certificates">Сертификаты</string>
+    <string name="change_email">Изменить эл-почту</string>
+    <string name="language">Язык</string>
+    <string name="help">Помощь</string>
+    <string name="logout">Выйти</string>
+    <string name="cancel">Отмена</string>
+    <string name="invalid_email">Неверный формат электронной почты</string>
+    <string name="invalid_password">Пароль должен быть не менее 8 символов</string>
+    <string name="required_field">Обязательное поле</string>
+    <string name="passwords_are_different">Пароли не совпадают</string>
+    <string name="info">Инфо</string>
+    <string name="reviews">Отзывы</string>
+    <string name="modules">Модули</string>
+    <string name="to_continue_switch_modules">Чтобы продолжить курс перейдите в раздел модулей</string>
+    <string name="you_have_joined_to_start_go_modules">Вы успешно присоединились,чтобы начать курс, перейдите в раздел модулей</string>
+    <string name="lesson">урок</string>
+    <string name="more">…Подробно</string>
+    <string name="members">участников</string>
+    <string name="notification_disabled">Уведомление отключено</string>
+    <string name="day">День</string>
+    <string name="tap_to_choose">Нажмите чтобы выбрать</string>
+    <string name="file">Папка</string>
+    <string name="camera">Камера</string>
+    <string name="write_your_review">Напишите свой отзыв</string>
+    <string name="write_here">Напишите здесь...</string>
+    <string name="send">Отправить</string>
+    <string name="your_review_submitted">Ваш отзыв отправлен</string>
+    <string name="leave_comment">Оставить отзыв</string>
+
+
+    <string-array name="languagelist">
+        <item>Қазақша</item>
+        <item>Русский</item>
+    </string-array>
+
+
+    <string-array name="timelist">
+        <item>16.00 - 17.00</item>
+        <item>17.00 - 18.00</item>
+        <item>18.00 - 19.00</item>
+        <item>19.00 - 20.00</item>
+        <item>20.00 - 21.00</item>
+        <item>21.00 - 22.00</item>
+    </string-array>
+
+</resources>

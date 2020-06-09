@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/materialGray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BrandedSwitch" parent="AppTheme">
+        <item name="colorAccent">#39ac39</item>
+    </style>
+
+    <style name="TransparentTheme" parent="AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:textColorSecondary">@color/colorText</item>
+        <item name="actionMenuTextColor">@color/colorText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorText</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorWhite</item>
+        <item name="boxBackgroundColor">#F6F6F6</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.CreditCardViewStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/materialGray</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.RedProgressBar">
+        <item name="colorAccent">@color/colorAccent</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="titleTextColor">@color/colorBlack</item>
+
+    </style>
+
+    <style name="NavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorBlack</item>
+        <item name="tabIndicatorColor">@color/colorLightGreen</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DefTextStyle">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relItemAnswer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/rounded_answer_default">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxAnswerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:textColor="@color/colorDark"
+        style="@style/DefTextStyle"
+        android:gravity="center_vertical"
+        android:button="@drawable/check_answer_click"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
